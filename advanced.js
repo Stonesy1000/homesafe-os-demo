@@ -58,5 +58,5 @@
   function notify(msg){const t=document.getElementById('toast');t.textContent='✓ '+msg;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2800)}
   document.querySelectorAll('[data-adv-toast]').forEach(b=>b.onclick=()=>notify(b.dataset.advToast));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeSnag()}});renderBoard();
-  const tabletCss=document.createElement('link');tabletCss.rel='stylesheet';tabletCss.href='tablet.css';document.head.appendChild(tabletCss);const tabletScript=document.createElement('script');tabletScript.src='tablet.js';document.body.appendChild(tabletScript);
+  const tabletCss=document.createElement('link');tabletCss.rel='stylesheet';tabletCss.href='tablet.css';document.head.appendChild(tabletCss);const workflowCss=document.createElement('link');workflowCss.rel='stylesheet';workflowCss.href='workflow.css';document.head.appendChild(workflowCss);const tabletScript=document.createElement('script');tabletScript.src='tablet.js';document.body.appendChild(tabletScript);const workflowScript=document.createElement('script');workflowScript.src='workflow.js';document.body.appendChild(workflowScript);
 })();

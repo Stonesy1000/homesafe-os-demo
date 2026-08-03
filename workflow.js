@@ -2,7 +2,7 @@
   const nav=document.querySelector('nav');const navButton=document.createElement('button');navButton.dataset.view='workflow';navButton.innerHTML='↝ <span>End-to-end workflow</span>';nav.insertBefore(navButton,nav.firstChild);
   const panel=document.createElement('section');panel.className='panel';panel.id='workflow';document.querySelector('.work').appendChild(panel);
   const stages=[
-    {team:'Contact centre',title:'Report, diagnose and start case',view:'contact',record:'CON-88231',action:'Resident identity, vulnerability and damp report captured; Awaab triage completed.'},
+    {team:'Contact centre',title:'Answer, transcribe, diagnose and start case',view:'contactvoip',record:'CON-88231',action:'VOIP call, caller identity, consent, transcript, vulnerability and Awaab triage captured.'},
     {team:'Housing officer',title:'Welfare, tenancy and access plan',view:'officer',record:'TASK-HO-4418',action:'Household needs checked; welfare visit and safe access arrangement recorded.'},
     {team:'Surveyor',title:'Inspect and approve specification',view:'surveytablet',record:'INS-88142',action:'Room survey, photographs and priced specification approved.'},
     {team:'R&M planning',title:'Allocate resources, materials and PO',view:'rmcontrol',record:'PLAN-204842',action:'DLO and contractor packages scheduled; materials reserved and PO committed.'},
